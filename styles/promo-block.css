@@ -1,0 +1,49 @@
+.promo-block {
+	background: url("../imgs/promo-bg.png") no-repeat;
+	width: 100%;
+	min-height: 574px;
+	padding-top: 70px;
+	margin-bottom: 20px;
+}
+
+.promo-wrapper {
+	width: 55%;
+}
+
+.promo-top {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.promo-top__img {
+	background-image: url("../imgs/Star\ 2.svg");
+	min-width: 80px;
+	height: 80px;
+	margin-right: 20px;
+}
+
+.promo-top__title {
+	color: rgb(244, 246, 245);
+	font-size: 40px;
+	line-height: 100%;
+}
+
+.promo-desc {
+	color: rgb(255, 255, 255);
+	font-size: 18px;
+	line-height: 150%;
+	margin-bottom: 60px;
+}
+
+.promo-btn {
+	padding: 20px 60px;
+	font-size: 20px;
+	line-height: 23px;
+	background-color: rgb(238, 219, 109);
+	border: none;
+}
+
+.promo-btn:hover {
+	background: rgb(250, 235, 151);
+}

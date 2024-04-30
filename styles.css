@@ -1,0 +1,57 @@
+@import url("./styles/logo.css");
+
+@import url("./styles/header-menu.css");
+
+@import url("./styles/main-block.css");
+
+@import url("./styles/products-block.css");
+
+@import url("./styles/promo-block.css");
+
+@import url("./styles/about-block.css");
+
+@import url("./styles/footer-menu.css");
+
+body {
+	font-family: "Raleway", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	color: rgb(44, 45, 53);
+}
+
+header,
+footer {
+	background-color: rgb(225, 237, 230);
+}
+
+h2,
+ul {
+	margin-block-start: 0;
+	margin-block-end: 0;
+	margin-inline-start: 0;
+	margin-inline-end: 0;
+}
+
+ul {
+	list-style-type: none;
+	padding-inline-start: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+button {
+	padding-block: 0;
+	padding-inline: 0;
+}
+
+.container {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+.wrapper {
+	padding: 0 165px;
+}

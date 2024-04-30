@@ -1,0 +1,84 @@
+.footer-menu {
+	display: flex;
+	justify-content: space-between;
+	padding: 23px 0;
+}
+/* 
+.footer-menu__left {
+	margin-right: 115px;
+} */
+
+.footer-menu__logo {
+	margin-bottom: 35px;
+}
+
+.footer-menu__contacts-phone {
+	font-size: 20px;
+	line-height: 23px;
+	margin-bottom: 8px;
+}
+
+.footer-menu__contacts-title {
+	color: rgb(134, 146, 139);
+	font-size: 18px;
+	line-height: 21px;
+}
+
+.footer-menu__center-title {
+	font-size: 20px;
+	line-height: 23px;
+	margin-bottom: 6px;
+}
+
+.footer-menu__center {
+	display: flex;
+}
+
+.footer-menu__center-block:not(:last-child) {
+	margin-right: 58px;
+}
+
+.footer-menu__center-item {
+	color: rgb(134, 146, 139);
+	font-size: 18px;
+	line-height: 150%;
+}
+
+.footer-menu__center-item:not(:last-child) {
+	margin-bottom: 6px;
+}
+
+.footer-menu__right {
+	color: rgb(134, 146, 139);
+	font-size: 12px;
+	line-height: 120%;
+}
+
+.footer-menu__tm {
+	margin-bottom: 6px;
+}
+
+.footer-menu__socials {
+	margin-bottom: 12px;
+}
+
+.footer-menu__social-items {
+	display: flex;
+}
+
+.footer-menu__social-item {
+	min-width: 24px;
+	min-height: 24px;
+}
+
+.footer-menu__social_fb {
+	background: url("../imgs/fb.svg") no-repeat;
+	margin-right: 35px;}
+
+.footer-menu__social_insta {
+	background: url("../imgs/insta.svg") no-repeat;
+	margin-right: 35px;}
+
+.footer-menu__social_ytb {
+	background: url("../imgs/youTb.svg") no-repeat;
+}
