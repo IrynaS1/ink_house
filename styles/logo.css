@@ -1,0 +1,15 @@
+.logo {
+	display: flex;
+	align-items: center;
+}
+
+.logo__img {
+	margin-right: 8px;
+}
+
+.logo__title {
+	color: rgb(89, 141, 102);
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 23px;
+}

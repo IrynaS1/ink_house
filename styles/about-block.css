@@ -1,0 +1,116 @@
+.about-block {
+	display: flex;
+	padding-top: 50px;
+	margin-bottom: 70px;
+}
+
+.about-block__img {
+	background: url("../imgs/team.png") no-repeat;
+	min-width: 445px;
+	min-height: 440px;
+	margin-right: 30px;
+}
+
+.about-block__right {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-top: 50px;
+}
+
+.about-block__title {
+	font-size: 40px;
+	line-height: 110%;
+	margin-bottom: 20px;
+}
+
+.about-block__desc {
+	font-size: 18px;
+	line-height: 150%;
+	margin-bottom: 20px;
+}
+
+.about-block__avas {
+	display: flex;
+}
+
+.about-block__ava {
+	width: 80px;
+	height: 80px;
+	margin-right: 30px;
+}
+
+.about-block__ava_one {
+	background: url("../imgs/ava1.png") no-repeat;
+}
+
+.about-block__ava_two {
+	background: url("../imgs/ava2.png") no-repeat;
+}
+
+.about-block__ava_three {
+	background: url("../imgs/ava3.png") no-repeat;
+}
+
+@media (max-width:1439px) {
+	.about-block {
+		display: block;
+	}
+
+	.about-block__img {
+		min-width: 413px;
+		margin: 0 0 40px 0;
+	}
+
+	.about-block__right {
+		padding-top: 0;
+	}
+
+	.about-block__title {
+		font-size: 30px;
+		margin-bottom: 30px;
+	}
+
+	.about-block__desc {
+		margin-bottom: 30px;
+	}
+}
+
+@media (max-width:1015px) {
+	.about-block {
+		padding-top: 0;
+		margin-bottom: 50px;
+	}
+
+	.about-block__title {
+		font-size: 24px;
+		margin-bottom: 20px;
+	}
+
+	.about-block__img {
+		min-width: 230px;
+		min-height: 330px;
+		background-size: contain;
+		margin: 0 0 30px 0;
+	}
+
+	.about-block__desc {
+		font-size: 16px;
+		line-height: 140%;
+	}
+}
+
+@media (max-width:570px) {
+	.about-block__img {
+		min-height: 250px;
+	}
+
+	.about-block__desc {
+		margin-bottom: 20px;
+	}
+
+	.about-block__ava {
+		background-size: contain;
+		margin-right: 25px;
+	}
+}
