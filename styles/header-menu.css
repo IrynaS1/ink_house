@@ -1,52 +1,133 @@
-.header-menu {
+.header {
 	padding: 38px 0;
 	display: flex;
 	justify-content: space-between;
 }
 
-.header-menu__items {
+.header__menu {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header__menu-items {
 	display: flex;
 	align-items: center;
 }
 
-.header-menu__item {
+.header__menu-item {
 	font-size: 20px;
 	line-height: 23px;
-}
-
-.header-menu__item:not(:last-child) {
 	margin-right: 60px;
+
+	&:hover {
+		color: rgb(89, 141, 102);
+	}
 }
 
-.header-menu__item:hover {
-	color: rgb(89, 141, 102);
-}
-
-.header-menu__item-active {
+.header__menu-item-active {
 	color: rgb(55, 107, 68);
 }
 
-.header-menu__item-basket {
+.header__menu-basket {
 	position: relative;
 }
 
-.header-menu__item-basket-btn {
+.header__menu-basket-btn {
 	background-color: rgb(225, 237, 230);
 	border: none;
 }
 
-.header-menu__item-basket-count {
+.header__menu-basket-count {
 	position: absolute;
-	padding: 2px 4px;
+	padding: 0 4px 2px 4px;
 	background-color: rgb(89, 141, 102);
 	color: rgb(255, 255, 255);
 	font-size: 10px;
 	font-weight: 700;
 	line-height: 12px;
-	text-align: center;
 	border-radius: 50%;
 }
 
+.header__mob-menu-items,
+.header__menu-mob-btn, 
 .invisible {
 	display: none;
+}
+
+@media (max-width:1439px) {
+	.header__menu-item {
+		font-size: 18px;
+		line-height: 21px;
+	}
+}
+
+@media (max-width:760px) {
+	.header {
+		display: block;
+	}
+
+	.header__logo {
+		justify-content: center;
+		margin-bottom: 15px;
+	}
+
+	.header__menu {
+		padding-top: 18px;
+		border-top: 1px solid rgb(195, 209, 198);
+	}
+}
+
+@media (max-width:570px) {
+	.header {
+		padding: 20px 0;}
+
+	.header__menu-items {
+		display: none;
+	}
+
+	.header__menu-mob-btn {
+		display: block;
+		width: 30px;
+		height: 30px;
+		border: none;
+		background-color: rgb(225, 237, 230);
+	}
+
+	.header__menu-mob {
+		width: 21px;
+		height: 17px;
+	}
+
+	.header__mob-menu-items {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.header__mob-menu-close {
+		background: url("../imgs/close_btn.svg") no-repeat;
+		width: 23px;
+		height: 23px;
+		border: none;
+		margin-bottom: 36px;
+
+		&:hover {
+			background: url("../imgs/close_btn-hover.svg") no-repeat;
+			width: 23px;
+			height: 23px;
+		}
+	}
+
+	.header__mob-menu-item {
+		font-size: 18px;
+		line-height: 21px;
+
+		&:hover {
+			color: rgb(89, 141, 102);
+		}
+	}
+
+	.header__mob-menu-item:not(:last-child) {
+		margin-bottom: 50px;
+	}
 }

@@ -55,3 +55,44 @@ button {
 .wrapper {
 	padding: 0 165px;
 }
+
+.invisible {
+	display: none;
+}
+
+@media (max-width:1439px) {
+	.container {
+		max-width: 1024px;
+	}
+
+	.wrapper {
+		padding: 0 39px;
+	}
+}
+
+@media (max-width:1015px) {
+	.container {
+		max-width: 770px;
+	}
+
+	.wrapper {
+		padding: 0 30px;
+	}
+}
+
+@media (max-width:760px) {
+	.container {
+		max-width: 580px;
+	}
+}
+
+@media (max-width:570px) {
+	.container {
+		max-width: 290px;
+		margin: 0;
+	}
+
+	.wrapper {
+		padding: 0 15px;
+	}
+}

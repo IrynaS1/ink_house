@@ -175,19 +175,20 @@ const fr = [
 		const basket = [];
 
 		function renderBasket() {
-			console.log('window.localStorage 222 --------', localStorage);
 			const addedGoods = localStorage;
-			const basketCount = document.querySelector('.header-menu__item-basket-count');
-			basketCount.classList.remove('invisible');
-			basketCount.innerText = addedGoods.length;
-			const cards = document.querySelectorAll('.products-block__card');
-			cards.forEach(card => {
-				if (Object.keys(localStorage).includes(card.attributes[0].value)) {
-					const btn = card.childNodes[11];
-					btn.classList.add('products-block__card-basket_added');
-					btn.textContent = 'В корзине';
-				}
-			});
+			if (localStorage.length > 0) {
+				const basketCount = document.querySelector('.header__menu-basket-count');
+				basketCount.classList.remove('invisible');
+				basketCount.innerText = addedGoods.length;
+				const cards = document.querySelectorAll('.products-block__card');
+				cards.forEach(card => {
+					if (Object.keys(localStorage).includes(card.attributes[0].value)) {
+						const btn = card.childNodes[11];
+						btn.classList.add('products-block__card-basket_added');
+						btn.textContent = 'В корзине';
+					}
+				});
+			}
 		}
 
 		renderBasket();
@@ -230,7 +231,6 @@ const fr = [
 
 	filterOn(fr);
 
-
 	document.querySelector('.products-block__filters').addEventListener('click', (e) => {
 		e.preventDefault();
 		catalog.innerHTML = '';
@@ -240,4 +240,20 @@ const fr = [
 			if (e.target.textContent === 'Англия') return filterOn(en);
 		}
 	});
+
+	document.querySelector('.header__menu-mob-btn').addEventListener('click', (e) => {
+		const mobHeaderMenu = document.querySelector('.overlay');
+		mobHeaderMenu.classList.remove('invisible');
+		const mobBtn = document.querySelector('.header__menu-mob-btn');
+		mobBtn.classList.add('invisible');
+		const basket = document.querySelector('.header__menu-basket');
+		basket.classList.add('invisible');
+		document.querySelector('.header__mob-menu-close').addEventListener('click', () => {
+			mobHeaderMenu.classList.add('invisible');
+			mobBtn.classList.remove('invisible');
+			basket.classList.remove('invisible');
+		});
+	});
+
+
 })();

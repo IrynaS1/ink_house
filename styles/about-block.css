@@ -51,3 +51,66 @@
 .about-block__ava_three {
 	background: url("../imgs/ava3.png") no-repeat;
 }
+
+@media (max-width:1439px) {
+	.about-block {
+		display: block;
+	}
+
+	.about-block__img {
+		min-width: 413px;
+		margin: 0 0 40px 0;
+	}
+
+	.about-block__right {
+		padding-top: 0;
+	}
+
+	.about-block__title {
+		font-size: 30px;
+		margin-bottom: 30px;
+	}
+
+	.about-block__desc {
+		margin-bottom: 30px;
+	}
+}
+
+@media (max-width:1015px) {
+	.about-block {
+		padding-top: 0;
+		margin-bottom: 50px;
+	}
+
+	.about-block__title {
+		font-size: 24px;
+		margin-bottom: 20px;
+	}
+
+	.about-block__img {
+		min-width: 230px;
+		min-height: 330px;
+		background-size: contain;
+		margin: 0 0 30px 0;
+	}
+
+	.about-block__desc {
+		font-size: 16px;
+		line-height: 140%;
+	}
+}
+
+@media (max-width:570px) {
+	.about-block__img {
+		min-height: 250px;
+	}
+
+	.about-block__desc {
+		margin-bottom: 20px;
+	}
+
+	.about-block__ava {
+		background-size: contain;
+		margin-right: 25px;
+	}
+}
